@@ -1,0 +1,31 @@
+
+<body onload="makeid()">
+    <p id="p1">KEY: </p>
+    </body>
+
+
+
+
+
+
+<script>
+      document.getElementById("p1").innerHTML = document.getElementById("p1").textContent + makeid(5);
+      document.getElementById("p1").innerHTML = document.getElementById("p1").textContent + "-"
+      document.getElementById("p1").innerHTML = document.getElementById("p1").textContent + makeid(5);
+      document.getElementById("p1").innerHTML = document.getElementById("p1").textContent + "-"
+      document.getElementById("p1").innerHTML = document.getElementById("p1").textContent + makeid(5);
+      document.getElementById("p1").innerHTML = document.getElementById("p1").textContent + "-"
+      document.getElementById("p1").innerHTML = document.getElementById("p1").textContent + makeid(5);
+
+    function makeid(length) {
+      var result           = '';
+      var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+      var charactersLength = characters.length;
+      for ( var i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * 
+   charactersLength));
+     }
+     return result;
+  }
+  
+  </script>
